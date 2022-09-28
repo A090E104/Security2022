@@ -1,25 +1,22 @@
 # 第一份作業:
-- 隱寫術 (Steganography)
- - Steganography 源自希臘文中的 steganos 和 graphein。
- - steganos 代表 hidden or covered (隱藏) 的意思。
- - graph 代表 to write (書寫) 的意思。
- - 隱寫術可被用來隱藏任何類型的數位內容。
-- 隱寫術的類型，亦即訊息可隱藏於以下的載體中：
- - 文字
- - 它可以是利用改變字型的顯示格式來隱藏訊息。
- - 如：美團隊研發「字型加密術」
-- 圖像
- - 圖像被廣泛運用於隱寫術上，因為圖像由大量的bit所組成，方便訊息的隱藏。
-- 方法：
- - Least Significant Bit Insertion
- - Masking and Filtering
- - Redundant Pattern Encoding
- - Encrypt and Scatter
- - Coding and Cosine Transformation
-- 音檔
- - 將訊息嵌入音頻訊號中，藉由改變音頻訊號相應的二進位序列來隱藏訊息。
-- 影片
- - 可以視為圖像隱寫術和音檔隱寫術的結合。
-- 網路(Protocol Steganography)
--  在資料傳輸中，將訊息嵌入網路協定(如：TCP、UDP、ICMP…)的技術。
- - 如：你可以在TCP/IP封包的標頭中隱藏訊息。
+- 隱寫術Steganography
+- 圖片隱寫(Image Steganography)
+ - 將資訊保存再png.jpg.bmp等圖片格式中。
+ - 也可將圖片每一個畫素的RGB轉為二進制，再替換當中最後一位數，
+ - 並使用ASCII表，將我們要隱藏的訊息先轉為十進制，
+ - 再轉為二進制，最後替換每個畫素的最後一位數。
+ - 相關工具：QuickStego、Steghide、zsteg、HxD、CryptaPix、BinWalk
+- 文件隱寫(Document Steganography)
+ - 可以將圖片or訊息隱藏在文件中。
+ - 相關工具：StegoStick、StegJ
+- 影片隱寫(Video Steganography)
+ - 相關工具：OmniHide、StegoStick、OpenPuff
+- 聲音隱寫(Audio Steganography)
+ - 相關工具：WavSteg、AudioStego、DeepSound
+- 資料夾隱寫(Folder Steganography)
+- 網頁隱寫(Web Steganography)
+- 電子郵件隱寫(Email Steganography)
+- 參考資料:
+ - [【Day21】隱寫技術 Steganography](https://ithelp.ithome.com.tw/articles/10278407)
+
+# 第二份作業:
